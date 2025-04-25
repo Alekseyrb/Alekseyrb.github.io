@@ -1,4 +1,4 @@
-const ACCESS_KEY = "-AH0scNG-F9UyIZsvCMZ9KQ43xXk5PG_E6LVwYXXtr8";
+const ACCESS_KEY = "pPXTfRVsGSfoDYXCzvh0w2UHvdR8rNcL45ey4s2Sa3E";
 const APP_NAME = "photo-explorer";
 
 const gallery = document.getElementById("gallery");
