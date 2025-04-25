@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Мінімалістичний пошук зображень на Unsplash" />
+  <title>Photo Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Photo Explorer</h1>
+    <form id="search-form" class="search-form">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Пошук зображень..."
+        autocomplete="off"
+      />
+      <button type="submit">🔍</button>
+    </form>
+  </header>
+
+  <main>
+    <section id="categories" class="categories">
+      <button class="category-btn" data-query="nature">🌿 Природа</button>
+      <button class="category-btn" data-query="technology">💻 Технології</button>
+      <button class="category-btn" data-query="people">🧑‍🤝‍🧑 Люди</button>
+      <button class="category-btn" data-query="architecture">🏛️ Архітектура</button>
+      <button class="category-btn" data-query="animals">🐾 Тварини</button>
+    </section>
+
+    <section id="gallery" class="gallery grid"></section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-image" src="" alt="Modal preview" />
+      <p class="modal-author">
+        Фото від <a href="#" id="modal-author-link" target="_blank" rel="noopener noreferrer">Автор</a> на Unsplash
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Фото з <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
